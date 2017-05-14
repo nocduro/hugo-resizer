@@ -2,6 +2,9 @@
 Script to resize images for the static site generator Hugo, using the Python Pillow module.
 
 ## Overview
+
+![](https://i.imgur.com/tYfUzfY.png)
+
 Finds images that are used in a [Hugo](https://gohugo.io) static site and creates smaller versions that can more easily be used with html
 elements like `srcset`.
 
@@ -42,7 +45,13 @@ If the `tqdm` progress bar module is installed a progress bar will show the conv
 the script took around 20 seconds on my i5 4670k with 4 processes. Scales roughly linearly for more CPU cores.
 
 ## Usage
-Run from the same directory that the `hugo` command would normally be run for the site.
+Script is written in Python3, run from the same directory that the `hugo` command would normally be run for the site:
+
+`python hugo_resizer.py`
+
+or 
+
+`python3 hugo_resizer.py`
 
 Currently don't have command line options set up, so configuration is done in the script.
 

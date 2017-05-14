@@ -106,10 +106,10 @@ def multi_processing(num_processes):
 if __name__ == "__main__":
     processes = 4
 
-    delete_generated_images()
+    # delete_generated_images()
 
     start_time = time.time()
-    #multi_processing(processes)
+    multi_processing(processes)
     end_time = time.time()
     m_time = time.time() - start_time
 
